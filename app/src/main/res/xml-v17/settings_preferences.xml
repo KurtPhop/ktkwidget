@@ -1,0 +1,52 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/app_title">
+        <Preference
+            app:summary="@string/app_version"
+            app:title="@string/app_info" />
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/contact_title">
+
+        <Preference
+            app:summary="@string/dev_name"
+            app:title="@string/dev_title">
+
+        </Preference>
+        <Preference
+            android:id="@+id/Preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:summary="@string/dev_link"
+            app:title="@string/dev_con">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/dev_link" />
+
+        </Preference>
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/currency_header">
+
+        <ListPreference
+            app:defaultValue="0"
+            app:entries="@array/currency_entries"
+            app:entryValues="@array/currency_values"
+            app:key="currency"
+            app:title="@string/currency_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/dark_header">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch"
+            android:title="@string/dark_title"
+            app:key="switch" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

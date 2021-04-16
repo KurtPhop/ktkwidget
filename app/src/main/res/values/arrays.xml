@@ -1,0 +1,12 @@
+<resources>
+    <!-- Currency List Preference -->
+    <string-array name="currency_entries">
+        <item>ИС 09.18.1</item>
+        <item>ИСП 09.18.1</item>
+    </string-array>
+
+    <string-array name="currency_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>
